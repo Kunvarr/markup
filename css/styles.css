@@ -1,0 +1,197 @@
+.line-button,
+.line-button:link,
+.line-button:visited,
+.line-button:active {
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 25px;
+    padding: 5px 25px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 100;
+    display: inline-block;
+    margin: 3px;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s;
+    outline: none;
+}
+.line-button-separator {
+    display: inline-block;
+    width: 60px;
+}
+.line-button.button-lg {
+    font-size: 30px;
+}
+.line-button.button-md {
+    font-size: 27px;
+    padding: 7px 35px;
+    border-radius: 30px;
+}
+.line-button:hover {
+    text-decoration: none;
+}
+.line-button.button-cherry {
+    background: #ad1547;
+}
+.line-button.button-cherry:hover {
+    box-shadow: 0 3px 13px 0 rgba(173, 21, 71, 0.7);
+}
+.line-button.button-orange {
+    background: #ffb400;
+    color: #ad1547;
+}
+.line-button.button-orange:hover {
+    box-shadow: 0 3px 13px 0 rgba(255, 124, 5, 0.69);
+}
+.line-button.button-green {
+    background: #4CAF50;
+}
+.line-button.button-green:hover {
+    box-shadow: 0 3px 13px 0 rgba(76, 175, 80, 0.51);
+}
+
+.tac-wide {
+    text-align: center;
+    width: 100%;
+}
+.red-button,
+.red-button:visited,
+.red-button:link,
+.yellow-button,
+.yellow-button:visited,
+.yellow-button:link {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    border: 0px;
+    min-width: 220px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.yellow-button,
+.yellow-button:visited {
+    color: #ad1547;
+    background: #ffc000;
+}
+
+.red-button,
+.red-button:visited,
+.line-button.button-cherry-pink
+{
+    background-color: #ff0021;
+    background: linear-gradient(to right,#ff0021,#ff006c);
+    background: -webkit-linear-gradient(to left,#ff0021,#ff006c);
+    background: -moz-linear-gradient(to left,#ff0021,#ff006c);
+    background: -o-linear-gradient(to left,#ff0021,#ff006c);
+    background: -ms-linear-gradient(to left,#ff0021,#ff006c);
+}
+
+.red-button:hover,
+.red-button:active,
+.line-button.button-cherry-pink:hover,
+.line-button.button-cherry-pink:active {
+    box-shadow: 0px 6px 10px 0px rgba(254, 55, 29, 0.7);
+    text-decoration: none;
+    color: #ffffff;
+}
+.yellow-button:hover,
+.yellow-button:active {
+    color: #ad1547;
+    text-decoration: none;
+    box-shadow: 0 3px 13px 0 rgba(255,204,0,1);
+}
+
+.red-button.large-button,
+.yellow-button.large-button {
+    font-size: 30px;
+    padding: 15px 70px;
+    font-weight: 100;
+    border-radius: 45px;
+}
+
+.red-button.small-button,
+.yellow-button.small-button {
+    min-width: 178px;
+    padding: 9px 10px;
+    font-size: 17px;
+    font-weight: 100;
+    border-radius: 45px;
+}
+
+.ve-content table,
+.ve-content table tbody,
+.ve-content table tr,
+.ve-content table td {
+    border: 0;
+}
+
+@media all and (max-width: 1200px) {
+    /* Make large buttons adaptive */
+    .red-button.large-button,
+    .yellow-button.large-button {
+        font-size: 23px;
+        padding: 15px 35px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    /* Make visual editor tables adaptive */
+    .ve-content table,
+    .ve-content table tbody,
+    .ve-content table tr,
+    .ve-content table td {
+        display: block;
+        width: 100%;
+    }
+    .ve-content table td {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .red-button.large-button,
+    .yellow-button.large-button {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+}
+@media all and (max-width: 550px) {
+    .line-button, .line-button:link {
+        display: table;
+        min-width: 100px;
+        margin: 8px auto;
+        font-size: 18px;
+    }
+    .line-button.button-lg {
+        font-size: 25px;
+    }
+    .line-button.button-md {
+        font-size: 22px;
+    }
+}
+@media all and (max-width: 380px) {
+    .red-button.large-button,
+    .yellow-button.large-button {
+        font-size: 15px;
+        padding: 15px 15px;
+    }
+
+    .line-button,
+    .line-button:link {
+        font-size: 17px;
+    }
+    .line-button.button-lg {
+        font-size: 23px;
+    }
+    .line-button.button-md {
+        font-size: 20px;
+    }
+}
