@@ -1,0 +1,255 @@
+ol, ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+} 
+
+.clr {
+	*zoom: 1;
+}
+
+.clr:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.sidebar {
+	position: relative;
+	max-width: 330px;
+	z-index: 1;
+}
+
+.sidebar_left {
+	float: left;
+}
+
+.sidebar_right {
+	float: right;
+}
+
+.shops {
+	height: 100%;
+}
+.shop {
+	position: relative;
+	height: 100%;
+	padding: 45px 0;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.shop_border {
+	padding: 45px 0 65px;
+}
+.shop_border .shop-desc {
+	bottom: 20px;
+}
+
+.shop_border:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+    background-image: -webkit-linear-gradient(right, #ff0072 0%, #ffb400 52%, red 100%);
+    background-image: -o-linear-gradient(right, #ff0072 0%, #ffb400 52%, red 100%);
+    background-image: linear-gradient(to left, #ff0072 0%, #ffb400 52%, red 100%);
+    z-index: 1;
+}
+
+.shop-desc {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.shop-desc:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0, .3);
+	z-index: -1;
+}
+
+.shop-desc__inner {
+	position: relative;
+	max-width: 700px;
+	padding: 32px 0;
+}
+
+.shop-desc__inner_right {
+	float: right;
+	text-align: right;
+}
+
+.shop-desc__title, .shop-desc__item {
+	text-shadow: 0.5px 0.9px 5.6px rgba(0, 0, 8, 0.94);
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.shop-desc__title {
+	margin-bottom: 30px;
+	font-size: 36px;
+	line-height: 1;
+}
+
+.shop-desc__item {
+	font-size: 30px;
+	line-height: 1.1;
+}
+
+.shop__info {
+	margin-bottom: 15px;
+	padding: 40px 15px 25px;
+	border-radius: 7px;
+	background-color: #ffc600;
+	color: #ad1547;
+	text-align: center;
+}
+
+.shop__info-title {
+	margin-bottom: 20px;
+	font-size: 36px;
+	line-height: 1;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.shop__info-adress {
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 1.2;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	letter-spacing: -1px;
+}
+
+.schedule__days {
+	margin-bottom: 10px;
+}
+
+.schedule li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5px;
+	padding: 2px 6px 1px;
+	background-color: white;
+	border-radius: 7px;
+	text-align: center;
+}
+
+.schedule li:last-child {
+	margin-right: 0;
+}
+
+.schedule li span {
+	font-size: 18px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.schedule__time {
+	font-size: 38px;
+	line-height: 1.4;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+.work-status {
+	margin-bottom: 15px;
+	padding: 2px 10px 3px;
+	font-size: 34px;
+	line-height: 1.4;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	color: #FFF;
+	background-image: linear-gradient(-58deg, #ff0072 0%, red 100%);
+	border-radius: 7px;
+}
+
+
+@media (max-width: 992px){
+    .shop, .shop_border  {
+        padding: 0 0 65px;
+    }
+    .shop-desc {
+    	position: relative;
+    	top: 0;
+    	border: auto;
+    	margin-bottom: 30px;
+    }
+
+	.shop-desc__inner_right {
+		text-align: left;
+	}
+
+    .sidebar {
+    	max-width: 550px;
+    }
+
+    .sidebar_left, .sidebar_right {
+    	float: none;
+    	margin: 0 auto;
+    } 
+
+	.map {
+		height: 500px;
+	}
+
+	.map img {
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 767px) {
+    .shop, .shop_border  {
+        padding: 0 10px 65px;
+    }
+    .shop-desc:before {
+    	left: -10px;
+    	right: -10px;
+    }
+    .shop-desc__title {
+    	font-size: 28px;
+    	line-height: 1.2;
+    	text-align: center;
+    }
+    .shop-desc__item {
+    	position: relative;
+    	padding-left: 40px;
+    	line-height: 1.2;
+    	font-size: 24px;
+    }
+    .shop-desc__item:before {
+		content: "";
+	    position: absolute;
+	    top: 14px;
+	    left: 15px;
+	    width: 15px;
+	    height: 2px;
+	    background-color: #FFF;
+	    box-shadow: 0.5px 0.9px 5.6px rgba(0, 0, 8, 0.94);
+    }
+
+	.map {
+		height: 300px;
+	}
+}
