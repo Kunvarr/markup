@@ -1,0 +1,147 @@
+.delivery_banner {
+  position: relative;
+}
+
+.delivery_banner img {
+  width: 100%;
+  height: auto;
+}
+
+.delivery_content_left {
+  width: 49%;
+  float: left;
+  background-color: #fff;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.delivery_content_left .content_header {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ad1547;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+.delivery_content_left .content_mid {
+  margin-left: 15px;
+}
+
+.delivery_content_left .content_mid .header,
+.delivery_content .content_mid .header {
+  font-size: 23px;
+  margin-bottom: 29px;
+}
+
+.delivery_content_left .content_mid p,
+.delivery_content .content_mid p {
+  font-size: 17px;
+}
+
+.delivery_content {
+  width: 49%;
+  float: right;
+  background-color: #fff;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.delivery_content .content_header {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ad1547;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+.delivery_content .content_mid {
+  margin-left: 15px;
+}
+
+.container .pr .foot {
+  background: #dcdcdc;
+  padding-top: 25px;
+  padding-bottom: 23px;
+  display: inline-block;
+  width: 100%;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.container .pr .foot p {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:1300px) {
+  .delivery_content_left .content_header,
+  .delivery_content .content_header {
+    font-size: 25px;
+  }
+
+  .delivery_content_left .content_mid .header,
+  .delivery_content .content_mid .header,
+  .delivery_content_left .content_mid .header,
+  .delivery_content .content_mid .header {
+    font-size: 18px;
+  }
+
+  .delivery_content_left .content_mid p,
+  .delivery_content .content_mid p,
+  .delivery_content_left .content_mid p,
+  .delivery_content .content_mid p {
+    font-size: 13px;
+  }
+
+  .container .pr .foot {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .delivery_content_left .content_header,
+  .delivery_content .content_header {
+    font-size: 22px;
+  }
+
+  .delivery_content_left .content_mid .header,
+  .delivery_content .content_mid .header,
+  .delivery_content_left .content_mid .header,
+  .delivery_content .content_mid .header {
+    font-size: 14px;
+  }
+
+  .delivery_content_left .content_mid p,
+  .delivery_content .content_mid p,
+  .delivery_content_left .content_mid p,
+  .delivery_content .content_mid p {
+    font-size: 13px;
+  }
+
+  .container .pr .foot {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .delivery_content_left .content_header,
+  .delivery_content .content_header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .delivery_content_left,
+  .delivery_content {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  .delivery_content_left .content_mid,
+  .delivery_content .content_mid {
+    margin-right: 15px;
+  }
+}
