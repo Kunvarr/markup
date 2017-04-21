@@ -16,6 +16,7 @@
     <link type="text/css" rel="stylesheet" href="css/toastr.min.css">
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="scss/about_us.css">
 
     <!-- Theme javascript -->
     <script type="text/javascript" src="js/jquery.1.12.4.min.js" charset="UTF-8"></script>
@@ -24,7 +25,6 @@
     <script type="text/javascript" src="js/owl.carousel.js" charset="UTF-8"></script>
     <script type="text/javascript" src="js/toastr.min.js" charset="UTF-8"></script>
     <script type="text/javascript" src="js/main.js" charset="UTF-8"></script>
-
 
 
     <script type="text/javascript">
@@ -47,7 +47,7 @@
                 this.style.opacity = "1";
             }
 
-            setTimeout(function (){
+            setTimeout(function () {
                 _this.style.willChange = 'initial'
             }, 1000);
         };
@@ -124,11 +124,13 @@
                     </div>
                     <div class="pull-right">
                         <div class="search" id="title-search">
-                            <form action="/search/"><input id="title-search-input" type="text" name="q" autocomplete="off"/>
+                            <form action="/search/"><input id="title-search-input" type="text" name="q"
+                                                           autocomplete="off"/>
                                 <button type="submit"></button>
                             </form>
                         </div>
-                        <div class="phone"><img data-callback src="img/phone.png" alt="phone" title="Обратный звонок"></div>
+                        <div class="phone"><img data-callback src="img/phone.png" alt="phone" title="Обратный звонок">
+                        </div>
                         <div class="cart" data-small-basket-reloadable>
                             <a href="/cart/">
                                 <img src="img/cart.png" alt="cart">
@@ -810,344 +812,59 @@
             <div class="header_phone"><a href="tel:+380961500500" title="позвонить">096 1 500 500</a></div>
         </div>
     </header>
-    <div class="container" id="content_holder" style="min-height:600px;">
-        <div class="row">
-            <div class="heading_wrap">
-                <div class="category_heading"><h1>Заголовок страницы</h1></div>
+    <div class="container" id="content_holder">
+        <div class="content_block">
+            <div class="content_block--header">
+                <div class="content_block--header-text content_block--header-rhombus content_block--header-first-rhombus">
+                    Привет!
+                </div>
+                <div class="content_block--header-linear hidden-xs"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="content_block--body">
+                <p>Если ты находишься на этой странице, значит тебе интересна наша компания и мы благодарны тебе за
+                    это!</p>
+                <div class="content_block-intro">Расскажем кратко о том, кто мы такие:</div>
             </div>
         </div>
-
-        <!-- PAGE CONTENT BEGINS HERE -->
-
-        <div class="row">
-            <div class="slider" data-slider-init data-rotate-time="6">
-                <div class="slider_ithem">
-                    <div class="slider_ithem_desc">
-                        <div class="description"></div>
-                    </div>
-                    <a href="https://smarts.ua/samsung_pay/">
-                        <img class="slider_image" src="demo_img/slide1.png">
-                    </a>
+        <div class="content_block">
+            <div class="content_block--header">
+                <div class="content_block--header-text content_block--header-rhombus content_block--header-second-rhombus">
+                    Наша миссия
                 </div>
-                <div class="slider_ithem">
-                    <div class="slider_ithem_desc">
-                        <div class="description"></div>
-                    </div>
-                    <a href="https://smarts.ua/samsung_pay/">
-                        <img class="slider_image" src="demo_img/slide2.jpg">
-                    </a>
-                </div>
+                <div class="content_block--header-linear hidden-xs"></div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="content_block--body">
+                <p>
+                    <span>У каждой компании есть своя миссия, то, что является по-настоящему ценным и выделяет ее
+                        среди других компаний.</span>
+                    <span>Миссия нашей компании:
+                        <i class="content_block--company-target">"Предоставлять лучший сервис для клиентов".</i>
+                    </span>
+                    <span>Наша цель - это безупречный сервис, создание крепких и долгосрочных отношений с клиентами.</span>
+                </p>
+                <p>Мы действительно дорожим своей репутацией и делаем все, чтобы наш сервис вызывал восторг у
+                    клиентов.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="module_heading">ПОПУЛЯРНЫЕ ТОВАРЫ <a href="/popular/">Смотреть больше</a>
+        <div class="content_block">
+            <div class="content_block--header">
+                <div class="content_block--header-text content_block--header-rhombus content_block--header-third-rhombus">В чем мы лучшие?</div>
+                <div class="content_block--header-linear hidden-xs"></div>
             </div>
-            <div class="module ">
-                <div class="min_product col-xs-3 label-init" id="bx_3966226736_11182">
-                    <div class="heading">
-                        <div class="col-xs-7 name"><a class="name"
-                                                      href="/smartfony-i-planshety/xiaomi-redmi-3s-16gb-gold/">Xiaomi
-                            Redmi 3S 16Gb Gold</a></div>
-                        <div class="col-xs-5 price">3&nbsp;799 <span>грн.</span></div>
-                    </div>
-                    <div class="body">
-                        <div class="product_label label-top label-left" id="p_184790706411182"><a href="/chast/"
-                                                                                                  id="p-11182_146"><img
-                                src="demo_img/pay_parts.png"
-                                data-container="#p_184790706411182"
-                                data-toggle="popover"
-                                data-content="Оплата частями от ПриватБанка на 3 платежа &lt;a href=&quot;/chast/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a><a href="/rassrochka/" id="p-11182_76"><img
-                                src="demo_img/rassrochka.png"
-                                data-container="#p_184790706411182"
-                                data-toggle="popover"
-                                data-content="Акционная рассрочка 0% на 6 платежей от Альфа-Банк &lt;a href=&quot;/rassrochka/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a><a href="/smarts-obmen/" id="p-11182_77"><img
-                                src="demo_img/smarts_obmen.png"
-                                data-container="#p_184790706411182"
-                                data-toggle="popover"
-                                data-content="Обменяй свой смартфон на новый с доплатой! Узнай размер доплаты прямо сейчас! 096 1 500 500  &lt;a href=&quot;/smarts-obmen/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a></div>
-                        <div class="normal">
-                            <a href="/smartfony-i-planshety/xiaomi-redmi-3s-16gb-gold/">
-                                <img class="fade-on-load" onload="fadingImageLoadHandler.call(this);"
-                                     src="demo_img/galaxy_s8_alt.png"
-                                     alt="фото Xiaomi Redmi 3S 16Gb Gold"
-                                     title="фото Xiaomi Redmi 3S 16Gb Gold"
-                                >
-                            </a>
-                        </div>
-                    </div>
-                    <div class="bottom clearfix">
-                        <div class="product_label label-inline col-xs-7"><span class="label-text"
-                                                                               title="Диагональ экрана: 5&quot; ">5&quot; </span><span
-                                class="label-text" title="Встроенная память : 16 ГБ">16 ГБ</span><span
-                                class="label-text" title="Основная камера: 13 Мп">13 Мп</span></div>
-                        <div class="col-xs-5 pull-right button_wrap p-0">
-                            <button data-add-to-basket data-id="11182">Купить</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="min_product col-xs-3 label-init" id="bx_3966226736_13415">
-                    <div class="heading">
-                        <div class="col-xs-7 name"><a class="name" href="/smartfony_1/samsung-j510h-galaxy-j5-gold/">Samsung
-                            J510H Galaxy J5 Gold</a></div>
-                        <div class="col-xs-5 price">5&nbsp;499 <span>грн.</span></div>
-                    </div>
-                    <div class="body">
-                        <div class="product_label label-top label-left" id="p_184790706413415"><a href="/chast/"
-                                                                                                  id="p-13415_146"><img
-                                src="demo_img/pay_parts.png"
-                                data-container="#p_184790706413415"
-                                data-toggle="popover"
-                                data-content="Оплата частями от ПриватБанка на 3 платежа &lt;a href=&quot;/chast/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a><a href="/rassrochka/" id="p-13415_76"><img
-                                src="demo_img/rassrochka.png"
-                                data-container="#p_184790706413415"
-                                data-toggle="popover"
-                                data-content="Акционная рассрочка 0% на 6 платежей от Альфа-Банк &lt;a href=&quot;/rassrochka/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a><a href="/smarts-obmen/" id="p-13415_77"><img
-                                src="demo_img/smarts_obmen.png"
-                                data-container="#p_184790706413415"
-                                data-toggle="popover"
-                                data-content="Обменяй свой смартфон на новый с доплатой! Узнай размер доплаты прямо сейчас! 096 1 500 500  &lt;a href=&quot;/smarts-obmen/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a></div>
-                        <div class="normal">
-                            <a href="/smartfony_1/samsung-j510h-galaxy-j5-gold/">
-                                <img class="fade-on-load" onload="fadingImageLoadHandler.call(this);"
-                                     src="demo_img/galaxy_s8.png"
-                                     alt="фото Samsung J510H Galaxy J5 Gold"
-                                     title="фото Samsung J510H Galaxy J5 Gold"
-                                >
-                            </a>
-                        </div>
-                    </div>
-                    <div class="bottom clearfix">
-                        <div class="product_label label-inline col-xs-7"><span class="label-text"
-                                                                               title="Диагональ экрана: 5.2&quot;">5.2&quot;</span><span
-                                class="label-text" title="Встроенная память : 16 ГБ">16 ГБ</span><span
-                                class="label-text" title="Основная камера: 13 Мп">13 Мп</span></div>
-                        <div class="col-xs-5 pull-right button_wrap p-0">
-                            <button data-add-to-basket data-id="13415">Купить</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="min_product col-xs-3 label-init" id="bx_3966226736_20462">
-                    <div class="heading">
-                        <div class="col-xs-7 name"><a class="name" href="/smartfony_1/samsung-a520f-galaxy-a5-black/">Samsung
-                            A520F Galaxy A5 Black</a></div>
-                        <div class="col-xs-5 price">10&nbsp;999 <span>грн.</span></div>
-                    </div>
-                    <div class="body">
-                        <div class="product_label label-top label-left" id="p_184790706420462"><a href="/chast/"
-                                                                                                  id="p-20462_146"><img
-                                src="demo_img/pay_parts.png"
-                                data-container="#p_184790706420462"
-                                data-toggle="popover"
-                                data-content="Оплата частями от ПриватБанка на 3 платежа &lt;a href=&quot;/chast/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a><a href="/rassrochka/" id="p-20462_51"><img
-                                src="demo_img/rassrochka.png"
-                                data-container="#p_184790706420462"
-                                data-toggle="popover"
-                                data-content="Акционная рассрочка 0% от УкрСибБанка на самые популярные смартфоны Samsung  &lt;a href=&quot;/rassrochka/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a><a href="/smarts-obmen/" id="p-20462_77"><img
-                                src="demo_img/smarts_obmen.png"
-                                data-container="#p_184790706420462"
-                                data-toggle="popover"
-                                data-content="Обменяй свой смартфон на новый с доплатой! Узнай размер доплаты прямо сейчас! 096 1 500 500  &lt;a href=&quot;/smarts-obmen/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a></div>
-                        <div class="product_label label-bottom label-right" id="p_167111379720462"><a
-                                href="/Samsung Galaxy A 2017/" id="p-20462_160"><img
-                                src="demo_img/charger_gift.png"
-                                data-container="#p_167111379720462"
-                                data-toggle="popover"
-                                data-content="Получай гарантированный подарок! microSD на 128 ГБ &lt;a href=&quot;/Samsung Galaxy A 2017/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a></div>
-                        <div class="normal">
-                            <a href="/smartfony_1/samsung-a520f-galaxy-a5-black/">
-                                <img class="fade-on-load" onload="fadingImageLoadHandler.call(this);"
-                                     src="demo_img/galaxy_s8.png"
-                                     alt="фото Samsung A520F Galaxy A5 Black"
-                                     title="фото Samsung A520F Galaxy A5 Black"
-                                >
-                            </a>
-                        </div>
-                    </div>
-                    <div class="bottom clearfix">
-                        <div class="product_label label-inline col-xs-7"><span class="label-text"
-                                                                               title="Диагональ экрана: 5.2&quot;">5.2&quot;</span><span
-                                class="label-text" title="Встроенная память : 32 ГБ">32 ГБ</span><span
-                                class="label-text" title="Основная камера: 16 Мп">16 Мп</span></div>
-                        <div class="col-xs-5 pull-right button_wrap p-0">
-                            <button data-add-to-basket data-id="20462">Купить</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="min_product col-xs-3 label-init" id="bx_3966226736_13215">
-                    <div class="heading">
-                        <div class="col-xs-7 name"><a class="name"
-                                                      href="/iphone/apple-iphone-7-32gb-matt-black-of-garantiya/">Apple
-                            iPhone 7 32Gb Matt Black Оф. гарантия</a></div>
-                        <div class="col-xs-5 price">21&nbsp;999 <span>грн.</span></div>
-                    </div>
-                    <div class="body">
-                        <div class="product_label label-top label-left" id="p_184790706413215"><a href="/chast/"
-                                                                                                  id="p-13215_75"><img
-                                src="demo_img/pay_parts.png"
-                                data-container="#p_184790706413215"
-                                data-toggle="popover"
-                                data-content="Доступна оплата частями от Приват Банк на 5 платежей &lt;a href=&quot;/chast/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a><a href="/rassrochka/" id="p-13215_76"><img
-                                src="demo_img/rassrochka.png"
-                                data-container="#p_184790706413215"
-                                data-toggle="popover"
-                                data-content="Акционная рассрочка 0% на 6 платежей от Альфа-Банк &lt;a href=&quot;/rassrochka/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a><a href="/smarts-obmen/" id="p-13215_77"><img
-                                src="demo_img/smarts_obmen.png"
-                                data-container="#p_184790706413215"
-                                data-toggle="popover"
-                                data-content="Обменяй свой смартфон на новый с доплатой! Узнай размер доплаты прямо сейчас! 096 1 500 500  &lt;a href=&quot;/smarts-obmen/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a></div>
-                        <div class="product_label label-bottom label-right" id="p_167111379713215"><a
-                                href="/Marshall_Mode_Black/" id="p-13215_155"><img
-                                src="demo_img/charger_gift.png"
-                                data-container="#p_167111379713215"
-                                data-toggle="popover"
-                                data-content="MARSHALL Mode Black  гарантированно к iPhone 7! &lt;a href=&quot;/Marshall_Mode_Black/&quot;&gt;Подробнее.&lt;/a&gt;"
-                                class="popover-init"
-                        >
-                        </a></div>
-                        <div class="normal">
-                            <a href="/iphone/apple-iphone-7-32gb-matt-black-of-garantiya/">
-                                <img class="fade-on-load" onload="fadingImageLoadHandler.call(this);"
-                                     src="demo_img/galaxy_s8.png"
-                                     alt="фото Apple iPhone 7 32Gb Matt Black Оф. гарантия"
-                                     title="фото Apple iPhone 7 32Gb Matt Black Оф. гарантия"
-                                >
-                            </a>
-                        </div>
-                    </div>
-                    <div class="bottom clearfix">
-                        <div class="product_label label-inline col-xs-7">
-                            <span class="label-text" title="Диагональ экрана: 4.7&quot;">4.7&quot;</span>
-                            <span class="label-text" title="Встроенная память : 32 ГБ">32 ГБ</span>
-                            <span class="label-text" title="Основная камера: 12 Мп">12 Мп</span></div>
-                        <div class="col-xs-5 pull-right button_wrap p-0">
-                            <button data-add-to-basket data-id="13215">Купить</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="clearfix"></div>
+            <div class="content_block--body">
+                <p>Преимущество нашей компании - это наше позиционирование, - «Лучшее место для покупки смартфона»! </p>
+                <p>Мы уверены, что создавать лучшие условия для покупки самого важного гаджета-смартфона,
+                    - это наша самая сильная сторона! </p>
+                <p>Постоянное развитие профессиональных знаний команды для предоставления превосходных консультаций -
+                    основное, что мы делаем для этого, ведь все, что связанно со смартфонами - это наша страсть!
+                    Смартфоны и все, что с ними связанно - это не много товаров, по сравнению с другими магазинами,
+                    но Вы можете быть уверенными, что в своей сфере - мы , профессионалы и Вам понравится совершать
+                    покупки в наших магазинах.</p>
             </div>
         </div>
-        <div class="row recomend_module">
-            <div class="module_heading">РЕКОМЕНДУЕМЫЙ ТОВАР <a href="/recommended/">Смотреть больше</a>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 recomend_wrapper" id="bx_40480796_20798">
-                <div class="recomend_product">
-                    <div class="col-sm-5 col-xs-8">
-                        <div class="name"><a class="name" href="/smartfony_1/samsung-a720f-galaxy-a7-blue/">Samsung
-                            A720F Galaxy A7 Blue</a></div>
-                        <div class="price">11&nbsp;999 <span>грн.</span></div>
-                        <div class="description">
-                            Этот смартфон даст фору и большинству планшетов
-                        </div>
-                    </div>
-                    <div class="col-sm-7 col-xs-4 recomend_image">
-                        <a href="/smartfony_1/samsung-a720f-galaxy-a7-blue/">
-                            <img class="fade-on-load" onload="fadingImageLoadHandler.call(this);"
-                                 src="demo_img/galaxy_tab.png"
-                                 alt="фото Samsung A720F Galaxy A7 Blue"
-                                 title="фото Samsung A720F Galaxy A7 Blue"
-                            >
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 recomend_wrapper" id="bx_40480796_20797">
-                <div class="recomend_product">
-                    <div class="col-sm-5 col-xs-8">
-                        <div class="name"><a class="name" href="/smartfony_1/samsung-a520f-galaxy-a5-blue/">Samsung
-                            A520F Galaxy A5 Blue</a></div>
-                        <div class="price">10&nbsp;999 <span>грн.</span></div>
-                        <div class="description">
-                            Солидно, со вкусом, неограниченные возможности
-                        </div>
-                    </div>
-                    <div class="col-sm-7 col-xs-4 recomend_image">
-                        <a href="/smartfony_1/samsung-a520f-galaxy-a5-blue/">
-                            <img class="fade-on-load" onload="fadingImageLoadHandler.call(this);"
-                                 src="demo_img/galaxy_s8_alt.png"
-                                 alt="фото Samsung A520F Galaxy A5 Blue"
-                                 title="фото Samsung A520F Galaxy A5 Blue"
-                            >
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-
-        <div class="row featured_product " id="bx_2618107327_20270">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <a class="heading"
-                   href="/mac/apple-macbook-pro-15-touch-bar-retina-mlh32ua-a-space-grey-ua-of-garantiya/">
-                    Apple MacBook Pro 15 Touch Bar Retina MLH32UA/A Space Grey UA Оф. гарантия </a>
-                <div class="description">
-                    Великолепия, яркости и мощи может быть еще больше
-                </div>
-                <div class="button">
-                    <button data-add-to-basket data-id="20270">Купить за 82&nbsp;699 <span>грн.</span></button>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <div class="featured_product_image" data-slider-init>
-                    <div class="ithem">
-                        <img src="demo_img/macbook_pro_touchbar.png"
-                             alt="фото Apple MacBook Pro 15 Touch Bar Retina MLH32UA/A Space Grey UA Оф. гарантия"
-                             title="фото Apple MacBook Pro 15 Touch Bar Retina MLH32UA/A Space Grey UA Оф. гарантия">
-                    </div>
-                    <div class="ithem">
-                        <img src="demo_img/macbook_pro_touchbar.png"
-                             alt="фото Apple MacBook Pro 15 Touch Bar Retina MLH32UA/A Space Grey UA Оф. гарантия"
-                             title="фото Apple MacBook Pro 15 Touch Bar Retina MLH32UA/A Space Grey UA Оф. гарантия">
-                    </div>
-                    <div class="ithem">
-                        <img src="demo_img/macbook_pro_touchbar.png"
-                             alt="фото Apple MacBook Pro 15 Touch Bar Retina MLH32UA/A Space Grey UA Оф. гарантия"
-                             title="фото Apple MacBook Pro 15 Touch Bar Retina MLH32UA/A Space Grey UA Оф. гарантия">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- PAGE CONTENT ENDS HERE -->
-
     </div>
     <div class="container">
         <div class="row pr">
@@ -1159,7 +876,8 @@
                     <div class="col-md-7 col-sm-12">
                         <div class="subscription-text tac">
                             <div class="heading"> Дарим&nbsp;<strong>50 грн.</strong> на покупки!</div>
-                            <div class="description"> Регистрируйся в <strong>бонусной программе Smarts-Club!</strong></div>
+                            <div class="description"> Регистрируйся в <strong>бонусной программе Smarts-Club!</strong>
+                            </div>
                             <br>
                         </div>
                     </div>
@@ -1300,9 +1018,9 @@
                                value=""
                                size="0"/>
                         <input type="text" placeholder="EMAIL" data-err-placeholder name="form_email_3" value=""
-                                size="0"/>
+                               size="0"/>
                         <textarea name="form_textarea_4" cols="40" rows="3" placeholder="СООБЩЕНИЕ ОПЕРАТОРУ"
-                                data-err-placeholder></textarea> <input type="hidden" name="smarts_protect" value="">
+                                  data-err-placeholder></textarea> <input type="hidden" name="smarts_protect" value="">
                         <input type="hidden" name="web_form_submit" value="Y"/>
                         <button type="submit">Заказать обратный звонок</button>
                     </form>

@@ -1,3 +1,80 @@
+
+$(document).ready(function(){
+
+    $(function(){
+        $('.js-section').each(function(){
+            // section vars
+            var _this = $(this),
+                timeWork = _this.find($(".js-time-range")),
+                startWork = timeWork.data('work-start'),
+                endWork = timeWork.data('work-end'),
+                workStatus = _this.find($(".js-work-status"));
+            // Date vars
+            var today = new Date();
+            var time = today.getHours();
+
+            var isWorkingTime = (time >= startWork) && (time <= endWork);
+ 
+            if( isWorkingTime ){
+                workStatus.html('сейчас открыто');
+            }
+            else {
+                workStatus.html('сейчас закрыто');
+            }
+        });
+    });
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+// код для плавной прокрутки секций. нужно решить проблему с учетом высоты хедера и футера //
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// var anchors = [];
+// var currentAnchor = -1;
+// var isAnimating  = false;
+
+// $(function(){
+    
+//     function updateAnchors() {
+//         anchors = [];
+//         $('.js-section').each(function(i, element){
+//             anchors.push( $(element).offset().top );
+//         });
+//     }
+    
+//     $('body').on('mousewheel', function(e){
+//         e.preventDefault();
+//         e.stopPropagation();
+//         if( isAnimating ) {
+//             return false;
+//         }
+//         isAnimating  = true;
+//         // Increase or reset current anchor
+//         if( e.originalEvent.wheelDelta >= 0 ) {
+//             currentAnchor--;
+//         }else{
+//             currentAnchor++;
+//         }
+//         if( currentAnchor > (anchors.length - 1) 
+//            || currentAnchor < 0 ) {
+//             currentAnchor = 0;
+//         }
+//         isAnimating  = true;
+//         $('html, body').animate({
+//             scrollTop: parseInt( anchors[currentAnchor] )
+//         }, 500, 'swing', function(){
+//             isAnimating  = false;
+//         });
+//     });
+
+//     updateAnchors();   
+    
+//     });
+
+})
+
+
+
+
 console.info('works');
 
 var
