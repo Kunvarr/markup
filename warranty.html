@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Smarts.ua</title>
+
+    <!-- External font -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
+
+    <!-- Theme styles -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="css/toastr.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="css/warranty.css">
+
+    <!-- Theme javascript -->
+    <script type="text/javascript" src="js/jquery.1.12.4.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/bootstrap.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/owl.carousel.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/toastr.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/easygooglemaps.min.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/main.js" charset="UTF-8"></script>
+
+
+
+    <script type="text/javascript">
+        window.SITE_TEMPLATE_PATH = '';
+        window.langMessages = {};
+        fadingImageLoadHandler = function (force) {
+            var _this = this;
+            if (!force && window.frameCacheVars !== undefined) {
+                if (!!window.compositeLoaded) {
+                    this.style.opacity = "1";
+                } else {
+                    /* Fix issues with composite loaded trigger fires after image loaded */
+                    setTimeout(function () {
+                        if (!!_this && window.compositeLoaded) {
+                            _this.style.opacity = "1";
+                        }
+                    }, 400);
+                }
+            } else {
+                this.style.opacity = "1";
+            }
+
+            setTimeout(function (){
+                _this.style.willChange = 'initial'
+            }, 1000);
+        };
+    </script>
+
+</head>
+<body>
+<nav id="slide-menu">
+    <div data-callback class="slide-menu-heading">
+        <img src="img/phone.png" alt="phone"> Обратный звонок
+    </div>
+    <ul>
+        <li><a href="/apple/">Apple</a></li>
+        <li class="has_children">Xiaomi</li>
+        <div class="mobile_children">
+            <a href="/smartfony-i-planshety/">Смартфоны и Планшеты</a>
+            <a href="/akustika-i-naushniki/">Акустика и Наушники</a>
+            <a href="/fitnes-i-zdorove/">Фитнес и Здоровье</a>
+            <a href="/portativnye-batarei/">Портативные Батареи</a>
+            <a href="/kolonki/">Колонки</a>
+        </div>
+        <li class="has_children">Samsung</li>
+        <div class="mobile_children">
+            <a href="/smartfony_1/">Смартфоны</a>
+            <a href="/planshety/">Планшеты</a>
+            <a href="/smart-chasy_2/">Смарт Часы</a>
+            <a href="/akustika-i-naushniki_1/">Акустика и Наушники</a>
+            <a href="/fitnes/">Фитнес</a>
+        </div>
+        <li class="has_children">Смартфоны</li>
+        <div class="mobile_children"><a href="/smartfony_2/">Смартфоны</a></div>
+        <li class="has_children">Планшеты</li>
+        <div class="mobile_children"><a href="/planshety_2/">Планшеты</a></div>
+        <li class="has_children">Смарт Часы</li>
+        <div class="mobile_children"><a href="/smart-chasy_1/">Смарт Часы</a></div>
+        <li class="has_children">Фитнес Трекеры</li>
+        <div class="mobile_children"><a href="/fitnes-trekery_1/">Фитнес Трекеры</a></div>
+    </ul>
+    <ul>
+        <li><a href="/aksessuary/">Аксессуары</a></li>
+        <li><a href="/gadzhety/">Гаджеты</a></li>
+        <li><a href="/naushniki/">Наушники</a></li>
+        <li><a href="/akustika/">Акустика</a></li>
+        <li><a href="/ekshn-kamery/">Экшн Камеры</a></li>
+        <li class="sale"><a href="/sale/">Sale</a></li>
+    </ul>
+</nav>
+<div class="site_container">
+    <div class="site_container_outer"></div>
+    <header>
+        <div class="container-fluid top-line-menu hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <ul class="clearfix">
+                        <li><a href="/about/">О нас</a></li>
+                        <li><a href="/about/guarantee/">Гарантия</a></li>
+                        <li><a href="/about/delivery/">Доставка</a></li>
+                        <li><a href="/service/">Сервисный центр</a></li>
+                        <li><a href="/smarts-obmen/">Смартс-обмен</a></li>
+                        <li><a href="/chast/">Оплата частями</a></li>
+                        <li><a href="/rassrochka/">Рассрочка</a></li>
+                        <li><a href="/promo/">Новости и акции</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid top_header">
+            <div class="container">
+                <div class="row">
+                    <div class="pull-left">
+                        <div class="menu_mobile"><img src="img/Menu.png"></div>
+                        <a href="/"> <img class="logo" src="img/logo_new.png" alt="logo"> </a>
+                        <div class="header_phone"><a href="tel:+380961500500" title="позвонить">096 1 500 500</a></div>
+                    </div>
+                    <div class="pull-right">
+                        <div class="search" id="title-search">
+                            <form action="/search/"><input id="title-search-input" type="text" name="q" autocomplete="off"/>
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                        <div class="phone"><img data-callback src="img/phone.png" alt="phone" title="Обратный звонок"></div>
+                        <div class="cart" data-small-basket-reloadable>
+                            <a href="/cart/">
+                                <img src="img/cart.png" alt="cart">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid middle_header">
+            <div class="container">
+                <div class="row">
+                    <nav>
+                        <li><a href="/apple/"><span>Apple</span></a></li>
+                        <li class="has_children"><a href="/xiaomi/"><span>Xiaomi</span></a>
+                            <div class="children_menu">
+                                <div class="col-xs-12">
+                                    <div class="col-xs-3 children_category">
+                                        <p class="heading_category">
+                                            <a href="/smartfony-i-planshety/"><span>Смартфоны и Планшеты</span></a>
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-5198d861-ef49-11e5-80ee-000c293f72bc/">Xiaomi
+                                                    Redmi Note 3 Pro</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-538f3781-d725-11e6-8110-000c293f72bc/">Xiaomi
+                                                    Mi Mix</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-cc8409e1-e1e2-11e5-80eb-000c293f72bc/">Xiaomi
+                                                    MI5 </a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-6eb87626-056d-11e7-811e-000c293f72bc/">Xiaomi
+                                                    Redmi Note 4X</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-180d84bc-8bb1-11e6-8105-000c293f72bc/">Xiaomi
+                                                    Redmi Note 4</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-52e1b888-8707-11e6-8104-000c293f72bc/">Xiaomi
+                                                    Mi5s </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-c33831c2-ab11-11e6-8105-000c293f72bc/">Xiaomi
+                                                    Redmi 4A</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-c1de0afa-d96c-11e5-80eb-000c293f72bc/">Xiaomi
+                                                    MiPad 2</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-3260512e-ce9c-11e6-810d-000c293f72bc/">Xiaomi
+                                                    Redmi 3S Pro</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-db19a391-6064-11e6-8100-000c293f72bc/">Xiaomi
+                                                    Redmi Pro</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-c33831b8-ab11-11e6-8105-000c293f72bc/">Xiaomi
+                                                    Redmi 4</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-ef55b374-7fce-11e6-8104-000c293f72bc/">Xiaomi
+                                                    Redmi 3X</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-1c29802a-06e3-11e6-80ee-000c293f72bc/">Xiaomi
+                                                    MI4S</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-548c7ab5-5570-11e6-80fa-000c293f72bc/">Xiaomi
+                                                    Redmi 3 Pro</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-b1586843-4a62-11e6-80fa-000c293f72bc/">Xiaomi
+                                                    Redmi 3S</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-52e1b88f-8707-11e6-8104-000c293f72bc/">Xiaomi
+                                                    Mi5s Plus</a></li>
+                                            <li>
+                                                <a href="/smartfony-i-planshety/filter/model-is-4c74abe3-4800-11e6-80fa-000c293f72bc/">Xiaomi
+                                                    Mi Max</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/akustika-i-naushniki/"><span>Акустика и Наушники</span></a></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/akustika-i-naushniki/filter/model-is-fa7b37de-fff3-11e6-811c-000c293f72bc/">Наушники
+                                                    Xiaomi Piston Air Capsule </a></li>
+                                            <li>
+                                                <a href="/akustika-i-naushniki/filter/model-is-92f64227-0000-11e7-811c-000c293f72bc/">Наушники
+                                                    1MORE Design ORIGINAL</a></li>
+                                            <li>
+                                                <a href="/akustika-i-naushniki/filter/model-is-fa7b37e0-fff3-11e6-811c-000c293f72bc/">Наушники
+                                                    Xiaomi Piston Fresh Bloom </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/akustika-i-naushniki/filter/model-is-92f64229-0000-11e7-811c-000c293f72bc/">Наушники
+                                                    1MORE Vintage Piston Silk </a></li>
+                                            <li>
+                                                <a href="/akustika-i-naushniki/filter/model-is-fa7b37c7-fff3-11e6-811c-000c293f72bc/">Наушники
+                                                    1MORE Piston Fit </a></li>
+                                            <li>
+                                                <a href="/akustika-i-naushniki/filter/model-is-fa7b37dd-fff3-11e6-811c-000c293f72bc/">HF
+                                                    Quantie «Hybrid Pro HD»</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/akustika-i-naushniki/filter/model-is-92f64226-0000-11e7-811c-000c293f72bc/">Наушники
+                                                    1MORE Design IOS ORIGINAL</a></li>
+                                            <li>
+                                                <a href="/akustika-i-naushniki/filter/model-is-fa7b37df-fff3-11e6-811c-000c293f72bc/">Наушники
+                                                    Xiaomi Piston Colorful Edition </a></li>
+                                            <li>
+                                                <a href="/akustika-i-naushniki/filter/model-is-92f64228-0000-11e7-811c-000c293f72bc/">Наушники
+                                                    1MORE iBFree </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/fitnes-i-zdorove/"><span>Фитнес и Здоровье</span></a></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/fitnes-i-zdorove/filter/model-is-c9b41a7c-0331-11e7-811d-000c293f72bc/">Xiaomi
+                                                    MiBand 1S </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/fitnes-i-zdorove/filter/model-is-c9b41a7d-0331-11e7-811d-000c293f72bc/">Xiaomi
+                                                    MiBand 2 </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/portativnye-batarei/"><span>Портативные Батареи</span></a></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/portativnye-batarei/filter/model-is-4d7e5fbc-f426-11e6-8119-000c293f72bc/">Xiaomi
+                                                    Power Bank 10000mAh 2-USB OUT 1A/2.1A 5V Original Type-C </a></li>
+                                            <li>
+                                                <a href="/portativnye-batarei/filter/model-is-4d7e5fbd-f426-11e6-8119-000c293f72bc/">Xiaomi
+                                                    Power Bank 10000mAh Original </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/portativnye-batarei/filter/model-is-4d7e5fc0-f426-11e6-8119-000c293f72bc/">Xiaomi
+                                                    Power Bank 2 10000mAh (2.4A, 1USB) (PLM02ZM-SL)</a></li>
+                                            <li>
+                                                <a href="/portativnye-batarei/filter/model-is-4d7e5fc2-f426-11e6-8119-000c293f72bc/">Xiaomi
+                                                    Power Bank 5000mAh Original </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/portativnye-batarei/filter/model-is-4d7e5fc1-f426-11e6-8119-000c293f72bc/">Xiaomi
+                                                    Power Bank 20000mAh 2-USB OUT 3.6A 5V Original </a></li>
+                                            <li>
+                                                <a href="/portativnye-batarei/filter/model-is-4d7e5fbf-f426-11e6-8119-000c293f72bc/">Xiaomi
+                                                    Power Bank 2 10000mAh (2.4A, 1USB) (PLM02ZM-BK)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/kolonki/"><span>Колонки</span></a></p></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="has_children"><a href="/samsung/"><span>Samsung</span></a>
+                            <div class="children_menu">
+                                <div class="col-xs-12">
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/smartfony_1/"><span>Смартфоны</span></a></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-125e46c2-0b7f-11e6-80ee-000c293f72bc/">Samsung
+                                                    B105</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-75fa0f6f-9e7b-11e1-951d-00259013ceb9/">Samsung
+                                                    J7 2015</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-2c4434bf-db02-11e5-80eb-000c293f72bc/">Samsung
+                                                    S7 Edge</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-3316eed8-e47e-11e6-8116-000c293f72bc/">Samsung
+                                                    A5 2017</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-9ec308d3-0b80-11e6-80ee-000c293f72bc/">Samsung
+                                                    J3</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-bf5751ad-3460-11e6-80f7-000c293f72bc/">Samsung
+                                                    J7 2016</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-3316eeee-e47e-11e6-8116-000c293f72bc/">Samsung
+                                                    A3 2017</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-4816395e-3cd9-11e5-ac2e-000c29b7d9ca/">Samsung
+                                                    J5 2015</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-60e41b98-c027-11e5-80eb-000c293f72bc/">Samsung
+                                                    A5 2016</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-5198d856-ef49-11e5-80ee-000c293f72bc/">Samsung
+                                                    J120</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-4f9ed662-0613-11e6-80ee-000c293f72bc/">Samsung
+                                                    B110</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-3316eee1-e47e-11e6-8116-000c293f72bc/">Samsung
+                                                    A7 2017 </a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-9e5be53d-153b-11e7-8123-000c293f72bc/">Samsung
+                                                    S8 Plus</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-60e41b9d-c027-11e5-80eb-000c293f72bc/">Samsung
+                                                    A7 2016</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-bf375328-4fd7-11e5-81f2-000c29b7d9ca/">Samsung
+                                                    B350</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-9b63b307-daed-11e5-80eb-000c293f72bc/">Samsung
+                                                    S7</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-9827d686-ef3b-11e5-80ee-000c293f72bc/">Samsung
+                                                    J1 Mini</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-82e15fc8-1c04-11e6-80f5-000c293f72bc/">Samsung
+                                                    J5 2016</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-72b7960c-b032-11e4-9c82-000c29b7d9ca/">Samsung
+                                                    A7 2015</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-bf37531c-4fd7-11e5-81f2-000c29b7d9ca/">Samsung
+                                                    J110</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-c76fc39b-8237-11e5-80e4-000c293f72bc/">Samsung
+                                                    J2</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-a3134e31-151a-11e7-8123-000c293f72bc/">Samsung
+                                                    S8</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-c81722ab-86e0-11e6-8104-000c293f72bc/">Samsung
+                                                    G570F J5 Prime</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-60e41b93-c027-11e5-80eb-000c293f72bc/">Samsung
+                                                    A3 2016</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-c81722a4-86e0-11e6-8104-000c293f72bc/">Samsung
+                                                    J2 Prime</a></li>
+                                            <li>
+                                                <a href="/smartfony_1/filter/model-is-3e5a51d5-350d-11e5-ac2e-000c29b7d9ca/">Samsung
+                                                    Grand Prime G531H</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/planshety/"><span>Планшеты</span></a></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/planshety/filter/model-is-fd22a8bd-07a6-11e6-80ee-000c293f72bc/">Samsung
+                                                    Tab A 7.0</a></li>
+                                            <li>
+                                                <a href="/planshety/filter/model-is-7b7d29ce-5268-11e6-80fa-000c293f72bc/">Samsung
+                                                    Tab A10.0</a></li>
+                                            <li>
+                                                <a href="/planshety/filter/model-is-dda3a689-44f2-11e6-80fa-000c293f72bc/">Samsung
+                                                    T819</a></li>
+                                            <li>
+                                                <a href="/planshety/filter/model-is-26b56dd7-d7c8-11e5-80eb-000c293f72bc/">Samsung
+                                                    Tab A 8.0</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/planshety/filter/model-is-b7b6ed8a-1ac7-11e7-8128-000c293f72bc/">Samsung
+                                                    Tab S3 </a></li>
+                                            <li>
+                                                <a href="/planshety/filter/model-is-a3b15380-2555-11e5-a8b1-000c29b7d9ca/">Samsung
+                                                    Tab E 10.0</a></li>
+                                            <li>
+                                                <a href="/planshety/filter/model-is-aff4cc19-40e0-11e5-ac2e-000c29b7d9ca/">Samsung
+                                                    Tab S2 8.0</a></li>
+                                            <li>
+                                                <a href="/planshety/filter/model-is-bffd8298-de8c-11e4-98be-000c29b7d9ca/">Samsung
+                                                    Tab 3 7.0 Lite</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/planshety/filter/model-is-dda3a686-44f2-11e6-80fa-000c293f72bc/">Samsung
+                                                    T813/15/19</a></li>
+                                            <li>
+                                                <a href="/planshety/filter/model-is-12fe0f67-6f5c-11e6-8104-000c293f72bc/">Samsung
+                                                    Galaxy View</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/smart-chasy_2/"><span>Смарт Часы</span></a></p></div>
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/akustika-i-naushniki_1/"><span>Акустика и Наушники</span></a></p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/fitnes/"><span>Фитнес</span></a></p></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="has_children"><a href="/smartfony/"><span>Смартфоны</span></a>
+                            <div class="children_menu">
+                                <div class="col-xs-12">
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/smartfony_2/"><span>Смартфоны</span></a></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-35ed1381-affa-11e6-8105-000c293f72bc/">Alcatel</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c343-c601-11e6-8108-000c293f72bc/">Keneksi</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-ee7ea528-d2f6-11e4-98be-000c29b7d9ca/">Lenovo</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-35ed14f2-affa-11e6-8105-000c293f72bc/">Prestigio</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c349-c601-11e6-8108-000c293f72bc/">Nous</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-ee7ea526-d2f6-11e4-98be-000c29b7d9ca/">Sony</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-ee7ea52d-d2f6-11e4-98be-000c29b7d9ca/">Huawei</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c358-c601-11e6-8108-000c293f72bc/">TP-LINK</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-ee7ea52a-d2f6-11e4-98be-000c29b7d9ca/">LG</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c35f-c601-11e6-8108-000c293f72bc/">ZTE</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-ee7ea52e-d2f6-11e4-98be-000c29b7d9ca/">Fly</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-2c8ff005-affa-11e6-8105-000c293f72bc/">Nomi</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c334-c601-11e6-8108-000c293f72bc/">Ergo</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-3c2c96ee-affa-11e6-8105-000c293f72bc/">Doogee</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-ee7ea529-d2f6-11e4-98be-000c29b7d9ca/">Nokia</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c32b-c601-11e6-8108-000c293f72bc/">Blackview</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c355-c601-11e6-8108-000c293f72bc/">Sigma</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-35ed14c7-affa-11e6-8105-000c293f72bc/">Motorola</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c32c-c601-11e6-8108-000c293f72bc/">Bravis</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c34d-c601-11e6-8108-000c293f72bc/">Philips</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c326-c601-11e6-8108-000c293f72bc/">Astro</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c34b-c601-11e6-8108-000c293f72bc/">Oukitel</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-86bb5d9b-0b13-11e7-8120-000c293f72bc/">Pixus</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c33d-c601-11e6-8108-000c293f72bc/">Impression</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c32e-c601-11e6-8108-000c293f72bc/">Coolpad</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c353-c601-11e6-8108-000c293f72bc/">Ruggear</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c324-c601-11e6-8108-000c293f72bc/">Archos</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c325-c601-11e6-8108-000c293f72bc/">Assistant</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c32d-c601-11e6-8108-000c293f72bc/">CAT</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-e816c35b-c601-11e6-8108-000c293f72bc/">Viaan</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-ee7ea527-d2f6-11e4-98be-000c29b7d9ca/">HTC</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-ee7ea524-d2f6-11e4-98be-000c29b7d9ca/">Samsung</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-ee7ea52b-d2f6-11e4-98be-000c29b7d9ca/">Xiaomi</a>
+                                            </li>
+                                            <li>
+                                                <a href="/smartfony_2/filter/brend-is-ee7ea525-d2f6-11e4-98be-000c29b7d9ca/">Apple</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="has_children"><a href="/planshety_1/"><span>Планшеты</span></a>
+                            <div class="children_menu">
+                                <div class="col-xs-12">
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/planshety_2/"><span>Планшеты</span></a></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-6f185f2a-3443-11e5-ac2e-000c29b7d9ca/">Lenovo
+                                                    Tab2 A10</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-b8caca79-e4ac-11e6-8116-000c293f72bc/">Nomi
+                                                    C070020</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-19f326ea-685f-11e6-8103-000c293f72bc/">Lenovo
+                                                    Yoga Tablet3 850</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-447d7def-7091-11e4-a090-000c29b7d9ca/">Lenovo
+                                                    830F Yoga Tablet 2 </a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-8e7dd339-ffef-11e6-811c-000c293f72bc/">Prestigio
+                                                    MultiPad Wize 7" 3147</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-19f326e7-685f-11e6-8103-000c293f72bc/">Lenovo
+                                                    Tab3 710</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-19f326de-685f-11e6-8103-000c293f72bc/">lenovo
+                                                    Tab3 850</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-8e7dd32f-ffef-11e6-811c-000c293f72bc/">Prestigio
+                                                    MultiPad Wize 10.1" 3131</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-44225e1d-f565-11e4-98be-000c29b7d9ca/">Nomi
+                                                    A10101</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-e4869a79-6f67-11e6-8104-000c293f72bc/">Lenovo
+                                                    Tab3 730</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-8e7dd32c-ffef-11e6-811c-000c293f72bc/">Prestigio
+                                                    MultiPad Color 2 7" PMT3777</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-5fa383a0-b61a-11e6-8105-000c293f72bc/">Lenovo
+                                                    Yoga Tablet3 10"</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-b678786e-cb1e-11e5-80eb-000c293f72bc/">Lenovo
+                                                    Tab2 X30</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-8e7dd329-ffef-11e6-811c-000c293f72bc/">Prestigio
+                                                    Grace 3118</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-fd22a8bd-07a6-11e6-80ee-000c293f72bc/">Samsung
+                                                    Tab A 7.0</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-7b7d29ce-5268-11e6-80fa-000c293f72bc/">Samsung
+                                                    Tab A10.0</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-dda3a689-44f2-11e6-80fa-000c293f72bc/">Samsung
+                                                    T819</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-26b56dd7-d7c8-11e5-80eb-000c293f72bc/">Samsung
+                                                    Tab A 8.0</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-b7b6ed8a-1ac7-11e7-8128-000c293f72bc/">Samsung
+                                                    Tab S3 </a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-a3b15380-2555-11e5-a8b1-000c29b7d9ca/">Samsung
+                                                    Tab E 10.0</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-aff4cc19-40e0-11e5-ac2e-000c29b7d9ca/">Samsung
+                                                    Tab S2 8.0</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-bffd8298-de8c-11e4-98be-000c29b7d9ca/">Samsung
+                                                    Tab 3 7.0 Lite</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-dda3a686-44f2-11e6-80fa-000c293f72bc/">Samsung
+                                                    T813/15/19</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-12fe0f67-6f5c-11e6-8104-000c293f72bc/">Samsung
+                                                    Galaxy View</a></li>
+                                            <li>
+                                                <a href="/planshety_2/filter/model-is-c1de0afa-d96c-11e5-80eb-000c293f72bc/">Xiaomi
+                                                    MiPad 2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="has_children"><a href="/smart-chasy/"><span>Смарт Часы</span></a>
+                            <div class="children_menu">
+                                <div class="col-xs-12">
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/smart-chasy_1/"><span>Смарт Часы</span></a></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smart-chasy_1/filter/model-is-9f292744-bdde-11e5-80eb-000c293f72bc/">Samsung
+                                                    Gear S2 Sport</a></li>
+                                            <li>
+                                                <a href="/smart-chasy_1/filter/model-is-4f0ab322-b175-11e6-8105-000c293f72bc/">Smart
+                                                    Baby Watch Q50</a></li>
+                                            <li>
+                                                <a href="/smart-chasy_1/filter/model-is-c12fad06-e85f-11e6-8118-000c293f72bc/">Smart
+                                                    Baby Watch Q200</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smart-chasy_1/filter/model-is-83e39521-d7e0-11e6-8110-000c293f72bc/">Samsung
+                                                    Gear S3 Frontier</a></li>
+                                            <li>
+                                                <a href="/smart-chasy_1/filter/model-is-9f292749-bdde-11e5-80eb-000c293f72bc/">Samsung
+                                                    Gear S2 Classic </a></li>
+                                            <li>
+                                                <a href="/smart-chasy_1/filter/model-is-83e39524-d7e0-11e6-8110-000c293f72bc/">Samsung
+                                                    Gear S3 Classic</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/smart-chasy_1/filter/model-is-303b4009-a156-11e4-9c82-000c29b7d9ca/">Motorola
+                                                    Moto 360</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="has_children"><a href="/fitnes-trekery/"><span>Фитнес Трекеры</span></a>
+                            <div class="children_menu">
+                                <div class="col-xs-12">
+                                    <div class="col-xs-3 children_category"><p class="heading_category"><a
+                                            href="/fitnes-trekery_1/"><span>Фитнес Трекеры</span></a></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/fitnes-trekery_1/filter/model-is-c9b41a7c-0331-11e7-811d-000c293f72bc/">Xiaomi
+                                                    MiBand 1S </a></li>
+                                            <li>
+                                                <a href="/fitnes-trekery_1/filter/model-is-c9b41a78-0331-11e7-811d-000c293f72bc/">Jawbone
+                                                    Up24 M </a></li>
+                                            <li>
+                                                <a href="/fitnes-trekery_1/filter/model-is-c9b41a76-0331-11e7-811d-000c293f72bc/">Fitbit
+                                                    Surge Small (FBSUBKS)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/fitnes-trekery_1/filter/model-is-c9b41a80-0331-11e7-811d-000c293f72bc/">Fitbit
+                                                    Charge HR Small (FBHRBKS)</a></li>
+                                            <li>
+                                                <a href="/fitnes-trekery_1/filter/model-is-f0f5e958-034a-11e7-811d-000c293f72bc/">Ремешок
+                                                    для Xiaomi MiBand</a></li>
+                                            <li>
+                                                <a href="/fitnes-trekery_1/filter/model-is-c9b41a7e-0331-11e7-811d-000c293f72bc/">Samsung
+                                                    Smart C harm </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-3 children_category">
+                                        <p class="pseudo_heading"></p>
+                                        <ul>
+                                            <li>
+                                                <a href="/fitnes-trekery_1/filter/model-is-c9b41a7d-0331-11e7-811d-000c293f72bc/">Xiaomi
+                                                    MiBand 2 </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid middle_header_xs">
+            <div class="container">
+                <div class="row">
+                    <div class="search">
+                        <form action="/search/" method="get">
+                            <input type="text" name="q">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bottom_header">
+            <div class="container">
+                <div class="row">
+                    <nav>
+                        <li><a href="/aksessuary/"><span>Аксессуары</span></a></li>
+                        <li><a href="/gadzhety/"><span>Гаджеты</span></a></li>
+                        <li><a href="/naushniki/"><span>Наушники</span></a></li>
+                        <li><a href="/akustika/"><span>Акустика</span></a></li>
+                        <li><a href="/ekshn-kamery/"><span>Экшн Камеры</span></a></li>
+                        <li class="sale"><a href="/sale/"><span>Sale</span></a></li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bottom_header_xs">
+            <div class="header_phone"><a href="tel:+380961500500" title="позвонить">096 1 500 500</a></div>
+        </div>
+    </header>
+    <!-- BEGIN warranty -->
+    <div class="warranty">
+        <div class="hero hero_color">
+            <div class="container">
+                <div class="row row_mg_no">
+                    <!-- BEGIN warranty__head -->
+                    <div class="warranty__head">
+                        <h1 class="title-h1 title-h1_white">Гарантийное и сервисное обслуживание</h1>
+
+                        <div class="brands-logos">
+                            <img src="img/brands-logos.png" alt="">
+                        </div>
+                    </div>
+                    <!-- END warranty__head -->
+                </div>
+            </div>
+        </div>
+        <div class="warranty__body">
+            <div class="container">
+                <div class="row row_mg_no">
+                    <!-- BEGIN article-text -->
+                    <article class="article-text">
+                        <section>
+                            <article>
+                                <h2><span>Я могу обменять товар или вернуть товар?</span></h2>
+
+                                <p>Вы можете вернуть или обменять товар надлежащего качества в течении 14 дней с момента покупки по условиям «Закона о защите прав потребителя».</p>
+
+                                <div class="title-inner">Чтобы использовать эту возможность, пожалуйста, убедитесь что: </div>
+
+                                <p>товар который Вы желаете вернуть, не должен быть в употреблении, на нем не ддолжно быть следов использования, царапин, сколов, потертостей, на внутреннем счетчике телефона должно быть не более 5 минут разговоров, программное обеспечение не изменялось и пр. Так же, товар должен быть полностью укомплектован, упаковка должна быть целостной а все ярлыки и заводские пленки сохранены.</p>
+                                <blockquote>
+                                    То есть вы имеете право обменять непродовольственный товар надлежащего качества на аналогичный, если товар не удовлетворил его по форме, габаритам, фасону, цвету, размеру или по другим причинам не может быть им использованный по назначению. Обмен товара надлежащего качества осуществляется, если он не использовался и если сохранен его товарный вид, потребительские свойства, пломбы, ярлыки, а также расчетный документ, выданный потребителю вместе с проданным товаром. 
+                                </blockquote>
+
+                                <p>В случае, если вы обратились в течении 14 дней с момента покупки с просьбой обменять товар ненадлежащего качества по вашему мнению, но товар соответствует критериям товара надлежащего качества, в таком случае Продавец производит обмен товара. </p>
+
+                                <p>Но если товар не работает, обмен или возврат товара производится только при наличии заключения/акта сервисного центра, авторизованного производителем Товара, о том, что условия эксплуатации не нарушены.</p>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <h2><span>Где и как можно произвести обмен или возврат товара?</span></h2>
+
+                                <p>Обмен и возврат товара купленного в магазинах «Смартс» или в Интернет-магазине www.smarts.ua производится в любом из наших розничных магазинах. Подробнее о адресах магазинов смотрите здесь. При себе вам нужно иметь товар, упаковку и комплектующие к нему, гарантийный талон и товарный чек. </p>
+
+                                <p>В случае, если Вы находитесь в городе где нет магазинов Смартс, товар нужно отправить «Новой почтой» предварительно согласовав этот вопрос с менеджером по телефону поддержки клиентов «Смартс» 096 1 500 500.</p>
+                            </article>
+                        </section>
+
+                        <section>
+                            <article>
+                                <h2><span> Какова гарантия на этот товар?</span></h2>
+
+                                <p>В зависимости от выбранного товара, производитель предоставляет разный срок гарантии, он указан в описании каждого товара на сайте, а так же в чеке на покупку. Гарантия предоставляется на срок от 14 дней до 36 месяцев, в зависимости от товара. Гарантия может быть представлена производителем товара либо компанией «Смартс». Подтверждением гарантийных обязательств служит гарантийный талон производителя либо гарантийный талон компании «Смартс». </p>
+                            </article>
+                        </section>
+
+                        <section>
+                            <article>
+                                <h2><span>В каких случаях гарантия не предоставляется?</span></h2>
+
+                                <p><b>Сервисный центр может отказать в гарантийном ремонте в случае:</b></p>
+                                <ul>
+                                    <li>нарушения сохранности гарантийных пломб;</li>
+                                    <li>наличия механических или иных повреждений, возникших вследствие умышленных или неосторожных действий покупателя или третьих лиц;</li>
+                                    <li>нарушение правил использования;</li>
+                                    <li>несанкционированного вскрытия, ремонта или изменения внутренних коммуникаций и компонентов товара, изменения конструкций или схемы товара;</li>
+                                    <li>если серийный номер или MAC-адрес, находящиеся в памяти изделия, изменены, стёрты или повреждены и не могут быть установлены;</li>
+                                    <li>если обнаружены повреждения, вызванные попаданием внутрь изделия посторонних предметов, веществ, жидкостей, насекомых или действием экстремальных температур.</li>
+                                </ul>
+                                <p><b>По вопросам сервисного обслуживания и возврата товара обращайтесь по номеру поддержки клиентов Смартс 096 1 500 500 (ежедневно 10:00 - 18:00 ) или по телефону сервисного центра «Смартс» 068 703 07 07</b></p>
+                            </article>
+                        </section>
+
+                        <div class="title-inner">Сервисные центры производителей:</div>
+
+                        <div class="brands-links">
+                            <ul>
+                                <li>
+                                    <a href="http://www.acer.ua/ac/ru/UA/content/service-centers2">Acer,</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.samsung.com/ua/support/location/supportServiceLocation.do?page=SERVICE.LOCATION">Samsung,</a>
+                                </li>
+                                <li>
+                                    <a href="http://impression.ua/texpodderzhka/servis-tsentry/kievskaja-oblast">Impression,</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.assistant.ua/support/service-center/">Assistant,</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.sony.ua/support/uk/repair/asc">Sony,</a>
+                                </li>
+                                <li>
+                                    <a href="http://service.asus.ua/">Аsus,</a>
+                                </li>
+                                <li>
+                                    <a href="http://shopap.lenovo.com/SEUILibrary/controller/e/uaweb/LenovoPortal/ua_UA/special-offers.workflow:ShowPromo?LandingPage=/All/AP/Partner/service">Lenovo,</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.tp-link.ua/support/service-centers/">TP-LINK,</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.motorola.com/staticfiles/Support/RU-RU/Static-Files/Service-Centers.pdf">Motorola,</a>
+                                </li>
+                                <li>
+                                    <a href="http://nomi-electronics.com/servis-i-podderzhka/">Nomi,</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.gratis.com.ua/index.php?option=com_content&amp;task=view&amp;id=38&amp;Itemid=64">Xiaomi,</a>
+                                </li>
+                                <li>
+                                    <a href="http://ergo-ua.com/ru/customer/service/">ERGO,</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.fly.ua/support/service_centers/">Fly,</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.prestigio.ua/info/support/service.xhtml?RPP=20&amp;RECORD_START=&amp;ALL_P=&amp;COUNTRY=3&amp;CITY=&amp;COMP_TYPE=&amp;PRODUCT_TYPE=">Prestigio</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <!-- END article-text -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row pr">
+            <div class="subscription">
+                <div class="subscription-top">
+                    <div class="col-md-5 col-sm-12">
+                        <div class="subscription-img"><img src="img/subscribe_logo.png"></div>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <div class="subscription-text tac">
+                            <div class="heading"> Дарим&nbsp;<strong>50 грн.</strong> на покупки!</div>
+                            <div class="description"> Регистрируйся в <strong>бонусной программе Smarts-Club!</strong></div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="description tac subscription-result"></div>
+                    <form name="subscription_form" class="subscription_form" role="form" id="subscription_form"
+                          method="post" action="/local/templates/smarts/ajax/subscribe.php">
+                        <input type="hidden" name="sessid">
+                        <input type="text" name="NAME" placeholder="Введите Вашe Имя">
+                        <input type="text" name="PHONE" data-phone-mask placeholder="Введите Ваш Телефон">
+                        <input type="text" name="EMAIL" placeholder="Введите Ваш Email">
+                        <button type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0">
+                <div class="heading"></div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                <div class="heading">КОМПАНИЯ</div>
+                <ul>
+                    <li><a href="/" class="selected">Главная</a></li>
+                    <li><a href="/about/">О нас</a></li>
+                    <li><a href="/about/guarantee/">Гарантия</a></li>
+                    <li><a href="/about/delivery/">Доставка</a></li>
+                    <li><a href="/service/">СЕРВИСНЫЙ ЦЕНТР</a></li>
+                </ul>
+            </div>
+            <div id="bxdynamic_NMQc3w_start" style="display:none"></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                <div class="heading"></div>
+                <ul>
+                    <li><a href="/apple/">Apple</a></li>
+                    <li><a href="/xiaomi/">Xiaomi</a></li>
+                    <li><a href="/samsung/">Samsung</a></li>
+                    <li><a href="/smartfony/">Смартфоны</a></li>
+                    <li><a href="/planshety_1/">Планшеты</a></li>
+                    <li><a href="/smart-chasy/">Смарт Часы</a></li>
+                    <li><a href="/fitnes-trekery/">Фитнес Трекеры</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                <div class="heading"></div>
+                <ul>
+                    <li><a href="/aksessuary/">Аксессуары</a></li>
+                    <li><a href="/gadzhety/">Гаджеты</a></li>
+                    <li><a href="/naushniki/">Наушники</a></li>
+                    <li><a href="/akustika/">Акустика</a></li>
+                    <li><a href="/ekshn-kamery/">Экшн Камеры</a></li>
+                    <li><a href="/sale/">Sale</a></li>
+                </ul>
+            </div>
+            <div id="bxdynamic_NMQc3w_end" style="display:none"></div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                <div class="heading"></div>
+                <ul>
+                    <li><a href="/rassrochka/">Рассрочка</a></li>
+                    <li><a href="/chast/">Оплата частями</a></li>
+                    <li><a href="/smarts-obmen/">Смартс-ОБМЕН</a></li>
+                    <li><a href="/promo/">Акции</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="heading">Контакты</div>
+                <ul class="contact">
+                    <li class="social-buttons">
+                        <a href="https://www.facebook.com/smarts.ua/" target="_blank">
+                            <img class="hide-on-hover" src="img/Facebook.png">
+                            <img class="show-on-hover" src="img/Facebook_hover.png"></a>
+                        <a href="https://www.instagram.com/smarts_ua/" target="_blank">
+                            <img class="hide-on-hover" src="img/instagram_grey_18.png">
+                            <img class="show-on-hover" src="img/instagram_red__18.png">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC5PrndoKPpTQ9qZ2fqwY1IQ" target="_blank">
+                            <img class="hide-on-hover" src="img/youtube_grey___18.png">
+                            <img class="show-on-hover" src="img/youtube_red___18.png">
+                        </a>
+                    </li>
+                    <li></li>
+                    <li>(096) 1-500-500 (с мобильных)</li>
+                    <li><a data-callback href="javascript:void(0)">Обратный звонок</a></li>
+                    <li><a href="mailto:info@smarts.ua">info@smarts.ua</a></li>
+                    <li></li>
+                    <li><img src="img/credit_carts.jpg"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div id="basket_success" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-body row">
+                    <div class="col-lg-12 tac basket-success__message">
+                        <span class="basket-success__icon">
+                            <img src="img/cart_inverted.png">
+                        </span>
+                        Товар добавлен в корзину
+                    </div>
+                    <div class="col-lg-12 cart_wrapper tac">
+                        <div class="pull-left">
+                            <button class="go_out" data-dismiss="modal">Продолжить покупки</button>
+                        </div>
+                        <div class="pull-right"><a href="/cart/" class="confirm">Оформить заказ</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_wrapper callback">
+        <div class="mymodal">
+            <div class="header">
+                <img src="img/Phone_red.png">Обратный звонок
+                <img class="modal_close" src="img/min-cross_grey.png">
+            </div>
+            <div id="comp_ac1e2d2071f1417f583867d0ee9d819e">
+                <div class="modal_text">Оставьте ваш контакт. Мы перезвоним вам в ближайшее время.</div>
+                <div id="callbackform">
+                    <form name="CALLBACK" action="/" method="POST" enctype="multipart/form-data">
+                        <input type="hidden"
+                               name="sessid"
+                               id="sessid"
+                               value=""/>
+                        <input type="hidden" name="WEB_FORM_ID" value="1"/>
+                        <input type="text" placeholder="ВАШЕ ИМЯ *"
+                               data-err-placeholder name="form_text_1"
+                               value="" size="0"/>
+                        <input type="text"
+                               data-phone-mask
+                               placeholder="НОМЕР ТЕЛЕФОНА *"
+                               data-err-placeholder
+                               name="form_text_2"
+                               value=""
+                               size="0"/>
+                        <input type="text" placeholder="EMAIL" data-err-placeholder name="form_email_3" value=""
+                                size="0"/>
+                        <textarea name="form_textarea_4" cols="40" rows="3" placeholder="СООБЩЕНИЕ ОПЕРАТОРУ"
+                                data-err-placeholder></textarea> <input type="hidden" name="smarts_protect" value="">
+                        <input type="hidden" name="web_form_submit" value="Y"/>
+                        <button type="submit">Заказать обратный звонок</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popups"></div>
+</div>
+</body>
+</html>
