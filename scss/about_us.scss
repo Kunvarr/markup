@@ -1,0 +1,139 @@
+.content_block {
+  margin-top: 30px;
+
+  &--header {
+    &-text {
+      text-align: center;
+      font-size: 28px;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
+      padding-bottom: 5px;
+    }
+    &-rhombus {
+      position: relative;
+      z-index: 1;
+      top: 10px;
+      background-image: url('../img/rhombus.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    &-first-rhombus,
+    &-second-rhombus,
+    &-third-rhombus {
+      max-width: 300px;
+      margin: 0 auto 25px;
+    }
+  }
+  &--body {
+    p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      text-align: center;
+      i {
+        display: block;
+        padding: 3px 15px;
+      }
+    }
+  }
+  &-intro {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  &--company-target {
+    background-color: #ffa800;
+    font-weight: bold;
+    max-width: 390px;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+}
+
+@media all and (min-width: 768px){
+  .content_block {
+    &--header {
+      &-text {
+        font-size: 36px;
+      }
+      &-linear {
+        float: right;
+        position: relative;
+        top: -27px;
+        width: 65%;
+        height: 16px;
+        background: #ee443a;
+        background: linear-gradient(to right, #ffc002, #ee443a);
+        background: -webkit-linear-gradient(to left, #ffc002, #ee443a);
+        background: -moz-linear-gradient(to left, #ffc002, #ee443a);
+        background: -o-linear-gradient(to left, #ffc002, #ee443a);
+        background: -ms-linear-gradient(to left, #ffc002, #ee443a);
+      }
+      &-first-rhombus,
+      &-second-rhombus,
+      &-third-rhombus {
+        position: relative;
+        left: -15px;
+        margin: inherit;
+      }
+
+      &-third-rhombus {
+        max-width: 450px;
+      }
+    }
+    &--body {
+      p {
+        margin-top: 15px;
+        text-align: left;
+
+        span {
+          display: block;
+        }
+
+        i {
+          display: initial;
+          padding: 2px 3px;
+        }
+      }
+    }
+
+    &-intro {
+      margin: 20px 0;
+    }
+  }
+}
+@media all and (min-width: 992px){
+  .content_block {
+    &--header {
+      &-linear {
+        width: 85%;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1200px){
+  .content_block {
+    &--header {
+      &-text {
+        font-size: 50px;
+      }
+      &-linear {
+        top: -35px;
+      }
+      &-second-rhombus {
+        max-width: 450px;
+      }
+      &-third-rhombus {
+        max-width: 535px;
+      }
+    }
+    &-intro {
+      font-size: 36px;
+    }
+    &--body {
+      p {
+        font-size: 19px;
+      }
+    }
+  }
+}

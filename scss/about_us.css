@@ -1,0 +1,84 @@
+.content_block {
+  margin-top: 30px; }
+  .content_block--header-text {
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 5px; }
+  .content_block--header-rhombus {
+    position: relative;
+    z-index: 1;
+    top: 10px;
+    background-image: url("../img/rhombus.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+  .content_block--header-first-rhombus, .content_block--header-second-rhombus, .content_block--header-third-rhombus {
+    max-width: 300px;
+    margin: 0 auto 25px; }
+  .content_block--body p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    text-align: center; }
+    .content_block--body p i {
+      display: block;
+      padding: 3px 15px; }
+  .content_block-intro {
+    font-size: 22px;
+    text-align: center; }
+  .content_block--company-target {
+    background-color: #ffa800;
+    font-weight: bold;
+    max-width: 390px;
+    margin: 0 auto;
+    border-radius: 5px; }
+
+@media all and (min-width: 768px) {
+  .content_block--header-text {
+    font-size: 36px; }
+  .content_block--header-linear {
+    float: right;
+    position: relative;
+    top: -27px;
+    width: 65%;
+    height: 16px;
+    background: #ee443a;
+    background: linear-gradient(to right, #ffc002, #ee443a);
+    background: -webkit-linear-gradient(to left, #ffc002, #ee443a);
+    background: -moz-linear-gradient(to left, #ffc002, #ee443a);
+    background: -o-linear-gradient(to left, #ffc002, #ee443a);
+    background: -ms-linear-gradient(to left, #ffc002, #ee443a); }
+  .content_block--header-first-rhombus, .content_block--header-second-rhombus, .content_block--header-third-rhombus {
+    position: relative;
+    left: -15px;
+    margin: inherit; }
+  .content_block--header-third-rhombus {
+    max-width: 450px; }
+  .content_block--body p {
+    margin-top: 15px;
+    text-align: left; }
+    .content_block--body p span {
+      display: block; }
+    .content_block--body p i {
+      display: initial;
+      padding: 2px 3px; }
+  .content_block-intro {
+    margin: 20px 0; } }
+@media all and (min-width: 992px) {
+  .content_block--header-linear {
+    width: 85%; } }
+@media all and (min-width: 1200px) {
+  .content_block--header-text {
+    font-size: 50px; }
+  .content_block--header-linear {
+    top: -35px; }
+  .content_block--header-second-rhombus {
+    max-width: 450px; }
+  .content_block--header-third-rhombus {
+    max-width: 535px; }
+  .content_block-intro {
+    font-size: 36px; }
+  .content_block--body p {
+    font-size: 19px; } }
+
+/*# sourceMappingURL=about_us.css.map */
